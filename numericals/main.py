@@ -68,6 +68,7 @@ def run_option(
 
         lower_boundary, upper_boundary = get_boundaries(
             option_type,
+            option_style,
             S_max,
             K,
             r,
@@ -97,7 +98,7 @@ def run_option(
                 S[1:-1],
                 K
             )
-        current_values = np.maximum(current_values, exercise_payoff)
+            current_values = np.maximum(current_values, exercise_payoff)
         
         current_row = np.concatenate(
             (
@@ -116,5 +117,5 @@ def run_option(
         known_row
     )
     
-    return option_type, option_style, price
+    return option_type, option_style, S, price, known_row
     
