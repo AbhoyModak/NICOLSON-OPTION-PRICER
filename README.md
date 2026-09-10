@@ -42,6 +42,23 @@ $$
 
 The spatial derivatives are approximated using central finite differences and the Crank–Nicolson method is used to solve the resulting linear system backward in time.
 
+## Model Parameters
+
+The numerical experiments use the following parameters:
+
+| Parameter | Value | Description |
+|-----------|------:|-------------|
+| $S_{\min}$ | 20 | Minimum stock price |
+| $S_{\max}$ | 500 | Maximum stock price |
+| $S_0$ | 200 | Initial stock price |
+| $K$ | 300 | Strike price |
+| $r$ | 0.10 | Risk-free interest rate |
+| $q$ | 0.00 | Dividend yield |
+| $\sigma$ | 0.20 | Volatility |
+| $T$ | 1.0 | Time to maturity |
+| $N$ | 200 | Number of time steps |
+| $M$ | 200 | Number of spatial steps |
+
 ### Payoff
 
 European and American options use the standard payoffs:
