@@ -14,10 +14,10 @@ sys.path.append(str(numericals_path))
 from main import run_option
 
 S_min = 20
-S_max = 300
-S0 = 100
+S_max = 500
+S0 = 200
 
-K = 100
+K = 300
 
 r = 0.10
 q = 0.0
@@ -172,7 +172,7 @@ plt.tight_layout()
 plt.show()
 
 
-# GRAPH 2 - NUMERICAL ERROR VS GRID SIZE
+# # GRAPH 2 - NUMERICAL ERROR VS GRID SIZE
 
 
 M_input = input ("ENTER M VALUES SEPERETED BY SPACE: ")
