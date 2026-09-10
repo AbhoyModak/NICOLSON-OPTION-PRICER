@@ -238,7 +238,7 @@ ax_2.grid(
 
 ax_2.text(
     0.70,
-    0.90,
+    0.70,
     parameter_text,
     transform=ax.transAxes,
     fontsize=10,
